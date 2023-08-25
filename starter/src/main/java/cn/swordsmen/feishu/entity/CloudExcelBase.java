@@ -10,23 +10,21 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * 飞书云表格模型基础类 [蔡旺鸿]
+ * 飞书云表格模型基础类
  *
- * @Author caiwanghong
- * @Date 2023/6/13 15:08
- * @Version 1.0
- * @apiNote
+ * @author caiwanghong
+ * @date 2023/8/25 15:24
+ * @version 1.0
  */
 @Getter
 @Setter
 public abstract class CloudExcelBase {
-    /***
-     * 收集实体对象所有属性值到数组 [蔡旺鸿]
+    /**
+     * 收集实体对象所有属性值到数组
      *
      * @author caiwanghong
-     * @apiNote
+     * @date 2023/8/25 15:24
      * @return Object[]
-     * @date 2023/6/13 15:10
      */
     public Object[] toObjArray() {
         Field[] fields = Arrays.stream(this.getClass().getDeclaredFields())

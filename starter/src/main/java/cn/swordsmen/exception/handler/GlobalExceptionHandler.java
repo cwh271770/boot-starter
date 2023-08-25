@@ -20,11 +20,12 @@ import javax.validation.ConstraintViolationException;
 import javax.validation.ValidationException;
 import java.util.Arrays;
 
-/***
- * 全局异常处理 [蔡旺鸿]
+/**
+ * 全局异常处理
  *
  * @author caiwanghong
- * @date 2023/8/22 13:24
+ * @date 2023/8/25 16:45
+ * @version 1.0
  */
 @Slf4j
 @RestControllerAdvice
@@ -34,14 +35,13 @@ public class GlobalExceptionHandler {
     }
 
 
-    /***
-     * request异常处理 [蔡旺鸿]
+    /**
+     * request异常处理
      *
      * @author caiwanghong
-     * @apiNote
      * @param e
+     * @date 2023/8/25 16:45
      * @return RespResult<ExceptionMsg>
-     * @date 2023/8/22 13:24
      */
     @ResponseBody
     @ExceptionHandler(value = { MethodArgumentNotValidException.class, BindException.class, ValidationException.class})
@@ -73,14 +73,13 @@ public class GlobalExceptionHandler {
         return RespResult.fail(exceptionMsgBuilder.build(), RespStatus.HTTP_STATUS_400);
     }
 
-    /***
-     * 自定义请求参数异常 [蔡旺鸿]
+    /**
+     * 自定义请求参数异常
      *
      * @author caiwanghong
-     * @apiNote
      * @param argumentException
+     * @date 2023/8/25 16:45
      * @return RespResult<?>
-     * @date 2023/8/22 13:25
      */
     @ResponseBody
     @ExceptionHandler(ArgumentException.class)
@@ -90,14 +89,13 @@ public class GlobalExceptionHandler {
             "Invalid Parameter", argumentException.getCode());
     }
 
-    /***
-     * 自定义业务异常处理 [蔡旺鸿]
+    /**
+     * 自定义业务异常处理
      *
      * @author caiwanghong
-     * @apiNote
      * @param businessException
+     * @date 2023/8/25 16:45
      * @return RespResult<?>
-     * @date 2023/8/22 13:25
      */
     @ResponseBody
     @ExceptionHandler(BusinessException.class)
@@ -111,14 +109,13 @@ public class GlobalExceptionHandler {
             businessException.getCode());
     }
 
-    /***
-     * 其他异常处理 [蔡旺鸿]
+    /**
+     * 其他异常处理
      *
      * @author caiwanghong
-     * @apiNote
      * @param exception
+     * @date 2023/8/25 16:45
      * @return RespResult<?>
-     * @date 2023/8/22 13:25
      */
     @ResponseBody
     @ExceptionHandler(Exception.class)

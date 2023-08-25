@@ -5,10 +5,11 @@ import com.baomidou.lock.LockInfo;
 import com.baomidou.lock.LockTemplate;
 
 /**
- * lock工具类 [蔡旺鸿]
+ * lock工具类
  *
  * @author caiwanghong
- * @date 2023/8/22 16:33
+ * @date 2023/8/25 15:40
+ * @version 1.0
  */
 public abstract class LockUtil {
     private static final LockTemplate LOCK_TEMPLATE = SpringUtil.getBean(LockTemplate.class);

@@ -18,12 +18,11 @@ import javax.validation.Valid;
 import javax.validation.groups.Default;
 
 /**
- * 测试控制器 [蔡旺鸿]
+ * 测试控制器
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:48
  * @version 1.0
- * @apiNote
- * @date 2023/8/23 9:36
  */
 @RestController
 @RequestMapping("/test")

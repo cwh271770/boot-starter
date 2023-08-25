@@ -5,12 +5,11 @@ import lombok.Getter;
 import static cn.swordsmen.response.RespStatus.HTTP_STATUS_400;
 
 /**
- * 自定义请求参数异常 [蔡旺鸿]
+ * 自定义参数异常
  *
  * @author caiwanghong
+ * @date 2023/8/25 14:14
  * @version 1.0
- * @apiNote
- * @date 2023/8/24 10:58
  */
 @Getter
 public class ArgumentException extends IllegalArgumentException {

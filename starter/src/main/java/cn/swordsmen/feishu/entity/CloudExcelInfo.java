@@ -3,12 +3,11 @@ package cn.swordsmen.feishu.entity;
 import lombok.*;
 
 /**
- * 云表格信息模型 [蔡旺鸿]
+ * 云表格信息模型
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:28
  * @version 1.0
- * @apiNote
- * @date 2023/6/28 13:19
  */
 @Getter
 @Setter

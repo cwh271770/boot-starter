@@ -5,12 +5,11 @@ import lombok.Getter;
 import static cn.swordsmen.response.RespStatus.HTTP_STATUS_500;
 
 /**
- * 自定义业务异常封装 [蔡旺鸿]
+ * 自定义业务异常封装
  *
  * @author caiwanghong
+ * @date 2023/8/25 14:15
  * @version 1.0
- * @apiNote
- * @date 2023/8/22 13:28
  */
 @Getter
 public class BusinessException extends RuntimeException {
@@ -50,5 +49,5 @@ public class BusinessException extends RuntimeException {
     protected BusinessException(String var1, Throwable var2, boolean var3, boolean var4) {
         super(var1, var2, var3, var4);
     }
-    
+
 }

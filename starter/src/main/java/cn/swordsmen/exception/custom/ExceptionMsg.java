@@ -7,12 +7,11 @@ import lombok.Singular;
 import java.util.List;
 
 /**
- * 异常信息封装 [蔡旺鸿]
+ * 异常信息封装
  *
  * @author caiwanghong
+ * @date 2023/8/25 14:14
  * @version 1.0
- * @apiNote
- * @date 2023/8/22 14:09
  */
 @Data
 @Builder

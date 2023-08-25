@@ -12,6 +12,13 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
+/**
+ * 飞书机器人自动装配
+ *
+ * @author caiwanghong
+ * @date 2023/8/25 15:22
+ * @version 1.0
+ */
 @AutoConfiguration
 @ConditionalOnClass(BotProxy.class)
 @EnableConfigurationProperties(value = BotProperties.class)

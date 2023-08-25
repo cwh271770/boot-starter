@@ -5,12 +5,11 @@ import lombok.*;
 import java.util.List;
 
 /**
- * sheet单元格式模型 [蔡旺鸿]
+ * sheet单元格式模型
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:27
  * @version 1.0
- * @apiNote
- * @date 2023/5/29 18:13
  */
 @Getter
 @Setter

@@ -3,12 +3,11 @@ package cn.swordsmen.feishu.entity;
 import lombok.Data;
 
 /**
- * 云文件夹元数据模型 [蔡旺鸿]
+ * 云文件夹元数据模型
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:29
  * @version 1.0
- * @apiNote
- * @date 2023/6/20 19:51
  */
 @Data
 public class CloudFolderRespBody {

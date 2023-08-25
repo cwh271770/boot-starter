@@ -4,12 +4,11 @@ import com.lark.oapi.core.response.BaseResponse;
 import lombok.Data;
 
 /**
- * 天书云文件响应体 [蔡旺鸿]
+ * 天书云文件响应体
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:28
  * @version 1.0
- * @apiNote
- * @date 2023/6/7 20:43
  */
 @Data
 public class CloudFilesResp extends BaseResponse<CloudFilesRespBody> {

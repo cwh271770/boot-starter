@@ -11,12 +11,11 @@ import javax.validation.constraints.*;
 import java.util.List;
 
 /**
- * 新增修改请求体 [蔡旺鸿]
+ * 新增修改请求体
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:50
  * @version 1.0
- * @apiNote
- * @date 2023/8/23 9:36
  */
 @Data
 public class UpsertRequest implements BaseRequest {

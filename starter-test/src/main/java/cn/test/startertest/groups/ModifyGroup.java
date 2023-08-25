@@ -1,12 +1,11 @@
 package cn.test.startertest.groups;
 
 /**
- * 修改编辑组 [蔡旺鸿]
+ * 修改编辑组
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:49
  * @version 1.0
- * @apiNote
- * @date 2023/8/23 9:49
  */
 public interface ModifyGroup {
 }

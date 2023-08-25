@@ -3,11 +3,12 @@ package cn.swordsmen.response;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-/***
- * 响应状态枚举 [蔡旺鸿]
+/**
+ * 响应状态枚举
  *
  * @author caiwanghong
- * @date 2023/8/22 13:23
+ * @date 2023/8/25 15:44
+ * @version 1.0
  */
 @Getter
 @AllArgsConstructor

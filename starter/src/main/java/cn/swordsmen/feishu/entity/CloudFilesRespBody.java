@@ -5,12 +5,11 @@ import lombok.Data;
 import java.util.Map;
 
 /**
- * 文件列表清单 [蔡旺鸿]
+ * 文件列表清单
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:28
  * @version 1.0
- * @apiNote
- * @date 2023/6/7 20:38
  */
 @Data
 public class CloudFilesRespBody {

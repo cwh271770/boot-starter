@@ -8,12 +8,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * 云文件夹信息 [蔡旺鸿]
+ * 云文件夹信息
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:29
  * @version 1.0
- * @apiNote
- * @date 2023/6/20 15:06
  */
 @Data
 @NoArgsConstructor

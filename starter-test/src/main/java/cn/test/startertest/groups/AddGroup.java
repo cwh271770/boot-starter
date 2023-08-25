@@ -1,12 +1,11 @@
 package cn.test.startertest.groups;
 
 /**
- * 新增分组 [蔡旺鸿]
+ * 新增分组
  *
- * @Author caiwanghong
- * @Date 2023/8/23 9:48
- * @Version 1.0
- * @apiNote
+ * @author caiwanghong
+ * @date 2023/8/25 15:49
+ * @version 1.0
  */
 public interface AddGroup {
 }

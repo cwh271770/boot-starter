@@ -7,12 +7,11 @@ import lombok.Data;
 import javax.validation.constraints.NotBlank;
 
 /**
- * description: [蔡旺鸿]
+ * 查询请求体
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:50
  * @version 1.0
- * @apiNote
- * @date 2023/8/23 9:59
  */
 @Data
 public class QueryRequest implements BaseRequest {

@@ -4,75 +4,66 @@ import cn.hutool.core.util.StrUtil;
 import cn.swordsmen.user.entity.User;
 
 /**
- * 用户工具类 [蔡旺鸿]
+ * 用户工具类
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:45
  * @version 1.0
- * @apiNote
- * @date 2023/8/22 15:58
  */
 public abstract class UserUtil {
-    /***
-     * 获取当前用户信息 [蔡旺鸿]
+    /**
+     * 获取当前用户信息
      *
      * @author caiwanghong
-     * @apiNote
-     * @param
+     * @date 2023/8/25 15:45
      * @return User
-     * @date 2023/8/22 16:01
      */
     public static User currentUser() {
         return UserContext.get();
     }
 
-    /***
-     * 设置当前用户 [蔡旺鸿]
+    /**
+     * 设置当前用户
      *
      * @author caiwanghong
-     * @apiNote
-     * @param currentUser
-     * @return void
-     * @date 2023/8/22 16:15
+     * @param currentUser 当前用户信息
+     * @date 2023/8/25 15:45
      */
     public static void setCurrentUser(User currentUser) {
         UserContext.set(currentUser);
     }
 
-    /***
-     * 根据key值获取用户扩展属性 [蔡旺鸿]
+    /**
+     * 根据key值获取用户扩展属性
      *
      * @author caiwanghong
-     * @apiNote
-     * @param key
+     * @param key 属性键值
+     * @date 2023/8/25 15:46
      * @return Object
-     * @date 2023/8/22 16:03
      */
     public static Object getProperty(String key) {
         return currentUser().getProperties().get(key);
     }
 
-    /***
-     * 构建系统用户信息 [蔡旺鸿]
+    /**
+     * 构建系统用户信息
      *
      * @author caiwanghong
-     * @apiNote
-     * @param
+     * @date 2023/8/25 15:46
      * @return User
-     * @date 2023/8/22 16:07
      */
     public static User buildSystemUser() {
         return User.builder().userCode("system").userId("system").userName("system")
             .userRole("system").build();
     }
 
-    /***
-     * 根据输入构建默认用户信息 [蔡旺鸿]
+    /**
+     * 根据输入构建默认用户信息
      *
      * @author caiwanghong
-     * @apiNote
-     * @param text
+     * @param text 输入内容
+     * @date 2023/8/25 15:46
      * @return User
-     * @date 2023/8/22 16:07
      */
     public static User buildDefaultUser(String text) {
         if(StrUtil.isBlank(text)) {

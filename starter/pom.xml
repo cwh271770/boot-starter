@@ -17,6 +17,27 @@
         <snakeyaml.version>2.0</snakeyaml.version>
     </properties>
 
+    <developers>
+        <developer>
+            <name>caiwanghong</name>
+            <email>cwh271770@aliyun.com</email>
+        </developer>
+    </developers>
+
+    <!--  阿里云云效Maven仓库  -->
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <name>Release Deploy</name>
+            <url>https://packages.aliyun.com/maven/repository/2409726-release-wK0NC4</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <name>Snapshot Deploy</name>
+            <url>https://packages.aliyun.com/maven/repository/2409726-snapshot-X1rlxU</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -81,5 +102,41 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!--生成javadoc jar包-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <!-- 确保当javadoc有编译错误时，也能正常生成javadoc jar包-->
+                        <configuration>
+                            <additionalJOption>-Xdoclint:none</additionalJOption>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!--生成源码jar包-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

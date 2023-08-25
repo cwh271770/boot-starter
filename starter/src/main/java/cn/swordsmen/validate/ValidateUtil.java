@@ -9,12 +9,11 @@ import javax.validation.Validator;
 import java.util.Set;
 
 /**
- * 校验工具类 [蔡旺鸿]
+ * 校验工具类
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:47
  * @version 1.0
- * @apiNote
- * @date 2023/8/23 21:46
  */
 public abstract class ValidateUtil {
     private static final Validator validator;
@@ -28,15 +27,14 @@ public abstract class ValidateUtil {
     }
 
 
-    /***
-     * 模型校验 [蔡旺鸿]
+    /**
+     * 模型校验
      *
      * @author caiwanghong
-     * @apiNote
-     * @param obj
-     * @param groups
+     * @param obj 校验对象
+     * @param groups 分组信息
+     * @date 2023/8/25 15:47
      * @return Set<ConstraintViolation<T>>
-     * @date 2023/8/23 21:48
      */
     public static <T> Set<ConstraintViolation<T>> validate(T obj, Class... groups) {
         Set<ConstraintViolation<T>> constraintViolations;

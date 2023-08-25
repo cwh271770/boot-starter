@@ -12,12 +12,11 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestBodyAdviceAd
 import java.lang.reflect.Type;
 
 /**
- * request自定义校验处理器 [蔡旺鸿]
+ * request自定义校验处理器
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:41
  * @version 1.0
- * @apiNote
- * @date 2023/8/24 2:08
  */
 @ControllerAdvice
 @Order(Ordered.HIGHEST_PRECEDENCE)

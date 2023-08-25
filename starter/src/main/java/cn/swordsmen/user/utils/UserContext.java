@@ -4,12 +4,11 @@ import cn.swordsmen.user.entity.User;
 import com.alibaba.ttl.TransmittableThreadLocal;
 
 /**
- * 用户上下文 [蔡旺鸿]
+ * 用户上下文
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:47
  * @version 1.0
- * @apiNote
- * @date 2023/8/22 14:39
  */
 public class UserContext {
     private static class UserHolder {

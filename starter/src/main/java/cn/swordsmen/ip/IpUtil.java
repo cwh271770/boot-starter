@@ -8,22 +8,20 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
- * ip工具类 [蔡旺鸿]
+ * ip工具类
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:40
  * @version 1.0
- * @apiNote
- * @date 2023/8/22 16:33
  */
 public abstract class IpUtil {
-    /***
-     * 获取当前请求用户ip地址  [蔡旺鸿]
+    /**
+     * 获取当前请求用户ip地址
      *
      * @author caiwanghong
-     * @apiNote
      * @param request
+     * @date 2023/8/25 15:40
      * @return String
-     * @date 2023/8/22 16:34
      */
     public static String getIpAddr(HttpServletRequest request){
         String ipAddress = request.getHeader("x-forwarded-for");

@@ -3,12 +3,11 @@ package cn.test.startertest.enums;
 import cn.swordsmen.enums.ErrorEnumBase;
 
 /**
- * Description: [蔡旺鸿]
+ * 错误信息枚举
  *
- * @Author caiwanghong
- * @Date 2023/8/24 13:58
- * @Version 1.0
- * @apiNote
+ * @author caiwanghong
+ * @date 2023/8/25 15:49
+ * @version 1.0
  */
 public enum ErrorEnum implements ErrorEnumBase<Integer, String> {
     DATA_IS_NOT_EXIST(2023, "数据不存在");

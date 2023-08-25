@@ -4,11 +4,12 @@ import cn.hutool.core.date.DateUtil;
 import lombok.Builder;
 import lombok.Data;
 
-/***
- * 全局响应结果封装 [蔡旺鸿]
+/**
+ * 全局响应结果封装
  *
  * @author caiwanghong
- * @date 2023/8/22 13:25
+ * @date 2023/8/25 15:41
+ * @version 1.0
  */
 @Data
 @Builder
@@ -34,23 +35,23 @@ public class RespResult<T> {
      */
     private T data;
 
-    /***
-     * response success result wrapper [蔡旺鸿]
+    /**
+     * success响应封装
      *
      * @author caiwanghong
+     * @date 2023/8/25 15:42
      * @return RespResult<T>
-     * @date 2023/8/22 13:45
      */
     public static <T> RespResult<T> success() {
         return success(null);
     }
 
-    /***
-     * response success result wrapper [蔡旺鸿]
+    /**
+     * success响应封装
      *
      * @author caiwanghong
+     * @date 2023/8/25 15:42
      * @return RespResult<T>
-     * @date 2023/8/22 13:45
      */
     public static <T> RespResult<T> success(T data) {
         return RespResult.<T>builder().data(data)
@@ -59,45 +60,45 @@ public class RespResult<T> {
                 .build();
     }
 
-    /***
-     * response error result wrapper [蔡旺鸿]
+    /**
+     * error响应封装
      *
      * @author caiwanghong
+     * @date 2023/8/25 15:42
      * @return RespResult<T>
-     * @date 2023/8/22 13:45
      */
     public static <T> RespResult<T> fail() {
         return fail(null, RespStatus.FAIL);
     }
 
-    /***
-     * response error result wrapper [蔡旺鸿]
+    /**
+     * error响应封装
      *
      * @author caiwanghong
+     * @date 2023/8/25 15:42
      * @return RespResult<T>
-     * @date 2023/8/22 13:45
      */
     public static <T> RespResult<T> fail(T data) {
         return fail(data, RespStatus.FAIL);
     }
 
-    /***
-     * response error result wrapper [蔡旺鸿]
+    /**
+     * error响应封装
      *
      * @author caiwanghong
+     * @date 2023/8/25 15:42
      * @return RespResult<T>
-     * @date 2023/8/22 13:45
      */
     public static <T> RespResult<T> fail(T data, String message) {
         return fail(data, message, RespStatus.FAIL.getCode());
     }
 
-    /***
-     * response error result wrapper [蔡旺鸿]
+    /**
+     * error响应封装
      *
      * @author caiwanghong
+     * @date 2023/8/25 15:42
      * @return RespResult<T>
-     * @date 2023/8/22 13:45
      */
     public static <T> RespResult<T> fail(T data, String message, Integer code) {
         return RespResult.<T>builder().data(data)
@@ -106,12 +107,12 @@ public class RespResult<T> {
                 .build();
     }
 
-    /***
-     * response error result wrapper [蔡旺鸿]
+    /**
+     * error响应封装
      *
      * @author caiwanghong
+     * @date 2023/8/25 15:42
      * @return RespResult<T>
-     * @date 2023/8/22 13:45
      */
     public static <T> RespResult<T> fail(T data, RespStatus status) {
         return RespResult.<T>builder().data(data)

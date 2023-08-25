@@ -51,12 +51,11 @@ import static cn.swordsmen.feishu.constant.Constant.Feishu_Card_Template.SHARE_T
 import static cn.swordsmen.feishu.constant.Constant.Redis_Key.*;
 
 /**
- * 飞书机器人对接接口实现类 [蔡旺鸿]
+ * 飞书机器人对接接口实现类
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:33
  * @version 1.0
- * @apiNote
- * @date 2023/5/23 19:17
  */
 @Slf4j
 @Lazy

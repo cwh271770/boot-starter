@@ -10,12 +10,11 @@ import org.springframework.stereotype.Service;
 import static cn.test.startertest.enums.ErrorEnum.DATA_IS_NOT_EXIST;
 
 /**
- * 测试服务实现类 [蔡旺鸿]
+ * 测试服务实现类
  *
  * @author caiwanghong
+ * @date 2023/8/25 15:50
  * @version 1.0
- * @apiNote
- * @date 2023/8/23 9:57
  */
 @Service
 public class TestServiceImpl implements TestService {

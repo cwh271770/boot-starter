@@ -5,46 +5,40 @@ import cn.test.startertest.request.QueryRequest;
 import cn.test.startertest.request.UpsertRequest;
 
 /**
- * 测试服务类 [蔡旺鸿]
+ * 测试服务类
  *
- * @Author caiwanghong
- * @Date 2023/8/23 9:55
- * @Version 1.0
- * @apiNote
+ * @author caiwanghong
+ * @date 2023/8/25 15:50
+ * @version 1.0
  */
 public interface TestService {
-
-    /***
-     * 新增测试 [蔡旺鸿]
+    /**
+     * 新增测试
      *
      * @author caiwanghong
-     * @apiNote
      * @param request
+     * @date 2023/8/25 15:51
      * @return void
-     * @date 2023/8/23 9:56
      */
     void add(UpsertRequest request);
 
-    /***
-     * 修改测试 [蔡旺鸿]
+    /**
+     * 修改测试
      *
      * @author caiwanghong
-     * @apiNote
      * @param request
+     * @date 2023/8/25 15:51
      * @return void
-     * @date 2023/8/23 9:56
      */
     void modify(UpsertRequest request);
 
-
-    /***
-     * 查询测试 [蔡旺鸿]
+    /**
+     * 查询测试
      *
      * @author caiwanghong
-     * @apiNote
      * @param request
+     * @date 2023/8/25 15:51
      * @return PersonDetail
-     * @date 2023/8/23 10:04
      */
     PersonDetail query(QueryRequest request);
 }
