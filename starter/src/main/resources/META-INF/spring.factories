@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.swordsmen.feishu.config.BotAutoConfiguration,\
+cn.swordsmen.request.RequestBodyValidateAutoConfiguration

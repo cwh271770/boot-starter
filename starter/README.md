@@ -1,0 +1,12 @@
+# boot-starter-3swordsmen（三剑客）
+自定义springboot启动器, 封装内容：
++ 用户上下文
++ 全局异常处理
+  + 启动类上加注解@EnableGlobalExceptionHandler开启全局异常处理
++ 全局request校验
+  + 实现BaseRequest接口，重写validate方法，post请求体参数自定义校验，是springValidation的一点补充
++ 全局response响应封装
++ 飞书api封装
++ ip相关
++ lock封装
++ 。。。。
