@@ -104,7 +104,7 @@ public class GlobalExceptionHandler {
     public RespResult<?> handleBusinessException(BusinessException businessException) {
         log.error("BusinessException: {}", ExceptionUtils.getStackTrace(businessException));
         ExceptionMsg.ExceptionMsgBuilder exceptionMsgBuilder = ExceptionMsg.builder();
-        Arrays.stream(businessException.getStackTrace()).limit(2)
+        Arrays.stream(businessException.getStackTrace()).limit(3)
             .map(StackTraceElement::toString)
             .forEach(exceptionMsgBuilder::error);
         return RespResult.fail(exceptionMsgBuilder.build(), businessException.getLocalizedMessage(),
@@ -125,7 +125,7 @@ public class GlobalExceptionHandler {
     public RespResult<?> handleException(Exception exception) {
         log.error("Exception: {}", ExceptionUtils.getStackTrace(exception));
         ExceptionMsg.ExceptionMsgBuilder exceptionMsgBuilder = ExceptionMsg.builder();
-        Arrays.stream(exception.getStackTrace()).limit(2)
+        Arrays.stream(exception.getStackTrace()).limit(3)
             .map(StackTraceElement::toString)
             .forEach(exceptionMsgBuilder::error);
         return RespResult.fail(exceptionMsgBuilder.build(), exception.getLocalizedMessage());
