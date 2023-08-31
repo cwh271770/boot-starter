@@ -67,9 +67,6 @@ public class BotProxyImpl implements BotProxy {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
-    @Autowired
-    private LockTemplate lockTemplate;
-
     public String getBotAccessToken(AccessTokenType tokenType) {
         User currentUser = UserUtil.currentUser();
         String tokenKey = (tokenType == AccessTokenType.User) ? (AccessTokenType.User +":"+ currentUser.getUserCode()) :
