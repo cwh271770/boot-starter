@@ -1,8 +1,8 @@
 package cn.test.startertest.request;
 
 import cn.hutool.core.util.StrUtil;
-import cn.swordsmen.exception.custom.ArgumentException;
-import cn.swordsmen.request.BaseRequest;
+import cn.swordsman.exception.custom.ArgumentException;
+import cn.swordsman.request.BaseRequest;
 import cn.test.startertest.groups.ModifyGroup;
 import lombok.Data;
 import org.hibernate.validator.constraints.Length;

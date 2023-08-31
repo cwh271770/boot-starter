@@ -30,8 +30,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>cn.threeswordsmen</groupId>
-            <artifactId>boot-starter-3swordsmen</artifactId>
+            <groupId>cn.swordsman</groupId>
+            <artifactId>boot-starter-swordsman</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>

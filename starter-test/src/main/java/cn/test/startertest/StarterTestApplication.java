@@ -1,6 +1,6 @@
 package cn.test.startertest;
 
-import cn.swordsmen.exception.annotation.EnableGlobalExceptionHandler;
+import cn.swordsman.exception.annotation.EnableGlobalExceptionHandler;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

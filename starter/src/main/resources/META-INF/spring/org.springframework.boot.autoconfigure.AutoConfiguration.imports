@@ -1,2 +1,2 @@
-cn.swordsmen.feishu.config.BotAutoConfiguration
-cn.swordsmen.request.RequestBodyValidateAutoConfiguration
+cn.swordsman.feishu.config.BotAutoConfiguration
+cn.swordsman.request.RequestBodyValidateAutoConfiguration

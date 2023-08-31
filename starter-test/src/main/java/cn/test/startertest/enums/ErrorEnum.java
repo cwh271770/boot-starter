@@ -1,6 +1,6 @@
 package cn.test.startertest.enums;
 
-import cn.swordsmen.enums.ErrorEnumBase;
+import cn.swordsman.enums.ErrorEnumBase;
 
 /**
  * 错误信息枚举

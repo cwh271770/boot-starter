@@ -1,6 +1,6 @@
 package cn.test.startertest.controller;
 
-import cn.swordsmen.response.RespResult;
+import cn.swordsman.response.RespResult;
 import cn.test.startertest.entity.PersonDetail;
 import cn.test.startertest.groups.AddGroup;
 import cn.test.startertest.groups.ModifyGroup;

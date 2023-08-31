@@ -1,6 +1,6 @@
 package cn.test.startertest.service.impl;
 
-import cn.swordsmen.exception.custom.BusinessException;
+import cn.swordsman.exception.custom.BusinessException;
 import cn.test.startertest.entity.PersonDetail;
 import cn.test.startertest.request.QueryRequest;
 import cn.test.startertest.request.UpsertRequest;

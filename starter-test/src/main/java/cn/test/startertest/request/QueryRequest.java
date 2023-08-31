@@ -1,7 +1,7 @@
 package cn.test.startertest.request;
 
-import cn.swordsmen.exception.custom.ArgumentException;
-import cn.swordsmen.request.BaseRequest;
+import cn.swordsman.exception.custom.ArgumentException;
+import cn.swordsman.request.BaseRequest;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;

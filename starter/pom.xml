@@ -7,11 +7,11 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.14</version>
     </parent>
-    <groupId>cn.threeswordsmen</groupId>
-    <artifactId>boot-starter-3swordsmen</artifactId>
+    <groupId>cn.swordsman</groupId>
+    <artifactId>boot-starter-swordsman</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>boot-starter-3swordsmen</name>
-    <description>boot-starter-3swordsmen</description>
+    <name>boot-starter-swordsman</name>
+    <description>boot-starter-swordsman</description>
     <properties>
         <java.version>8</java.version>
         <snakeyaml.version>2.0</snakeyaml.version>
